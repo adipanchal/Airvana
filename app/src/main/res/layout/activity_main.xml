@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Airvana"
+        android:textAlignment="center"
+        android:layout_marginTop="30pt"
+        android:textSize="45dp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"/>
+
+    <com.coderemix.airvana.AnimatedBallView
+        android:id="@+id/animatedBallView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60pt"
+        android:layout_height="400dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animatedBallView"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/breathButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Breath"
+            android:backgroundTint="#673778"
+            android:paddingHorizontal="60px"
+            android:paddingVertical="35px"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>
